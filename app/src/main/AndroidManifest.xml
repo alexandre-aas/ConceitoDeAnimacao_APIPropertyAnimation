@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".animacoes.AnimacaoAlpha" />
+        <activity android:name=".animacoes.AnimacaoRotate" />
+        <activity android:name=".animacoes.AnimacaoScale" />
+        <activity android:name=".animacoes.AnimacaoTranslate" />
+        <activity android:name=".animacoes.ConceitoValueAnimator" />
+        <activity android:name=".animacoes.ConceitoAnimatorSet" />
     </application>
 
 </manifest>
