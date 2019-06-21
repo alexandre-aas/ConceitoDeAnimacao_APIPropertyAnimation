@@ -22,6 +22,7 @@
         <activity android:name=".animacoes.AnimacaoTranslate" />
         <activity android:name=".animacoes.ConceitoValueAnimator" />
         <activity android:name=".animacoes.ConceitoAnimatorSet" />
+        <activity android:name=".animacoes.AnimatorListenerApagarTela" />
     </application>
 
 </manifest>

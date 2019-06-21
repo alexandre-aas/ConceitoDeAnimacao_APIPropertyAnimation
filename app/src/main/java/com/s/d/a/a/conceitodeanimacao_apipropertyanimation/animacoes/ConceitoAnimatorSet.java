@@ -3,10 +3,11 @@ package com.s.d.a.a.conceitodeanimacao_apipropertyanimation.animacoes;
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
+//import android.view.animation.Animation;
 import android.widget.ImageView;
 
 import com.s.d.a.a.conceitodeanimacao_apipropertyanimation.R;
@@ -28,11 +29,13 @@ public class ConceitoAnimatorSet extends Activity {
         float y = img.getY();
         ObjectAnimator alphaAnim = ObjectAnimator.ofFloat(img, "alpha", 1f, 0f);
         ObjectAnimator translateAnim = ObjectAnimator.ofFloat(img, "y", y, img.getHeight()*2);
+        ValueAnimator constanteAnimator = new ValueAnimator();
+
         // Fazemos o reverse manual aqui
         alphaAnim.setRepeatCount(1);
-        alphaAnim.setRepeatMode(Animation.REVERSE);
+        alphaAnim.setRepeatMode(constanteAnimator.RESTART);//Animation.REVERSE
         translateAnim.setRepeatCount(1);
-        translateAnim.setRepeatMode(Animation.REVERSE);
+        translateAnim.setRepeatMode(constanteAnimator.RESTART);//Animation.REVERSE
         AnimatorSet lista = new AnimatorSet();
         lista.playTogether(translateAnim, alphaAnim);
         animar(lista);

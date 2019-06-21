@@ -11,6 +11,7 @@ import com.s.d.a.a.conceitodeanimacao_apipropertyanimation.animacoes.AnimacaoAlp
 import com.s.d.a.a.conceitodeanimacao_apipropertyanimation.animacoes.AnimacaoRotate;
 import com.s.d.a.a.conceitodeanimacao_apipropertyanimation.animacoes.AnimacaoScale;
 import com.s.d.a.a.conceitodeanimacao_apipropertyanimation.animacoes.AnimacaoTranslate;
+import com.s.d.a.a.conceitodeanimacao_apipropertyanimation.animacoes.AnimatorListenerApagarTela;
 import com.s.d.a.a.conceitodeanimacao_apipropertyanimation.animacoes.ConceitoAnimatorSet;
 import com.s.d.a.a.conceitodeanimacao_apipropertyanimation.animacoes.ConceitoValueAnimator;
 
@@ -54,10 +55,10 @@ public class MainActivity extends ListActivity {
                 startActivity(new Intent(this, ConceitoAnimatorSet.class));
                 break;
             case 6:
-                //startActivity(new Intent(this, ExemploAnimatorListenerApagarTela.class));
+                startActivity(new Intent(this, AnimatorListenerApagarTela.class));
                 break;
             default:
-                finish();
+                finish();//Opção Sair
         }
     }
 }
